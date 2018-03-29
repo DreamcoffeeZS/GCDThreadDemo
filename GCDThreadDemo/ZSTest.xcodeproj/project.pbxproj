@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		46F17ADFA0683EDE71F40A57 /* Pods_ZSTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4E9931D1D10B8C3930FBEC3 /* Pods_ZSTest.framework */; };
-		E9229097205BB2600034C487 /* MyView.m in Sources */ = {isa = PBXBuildFile; fileRef = E9229096205BB2600034C487 /* MyView.m */; };
 		E9335C9F1C8FCCE100B4F3D3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E9335C9E1C8FCCE100B4F3D3 /* main.m */; };
 		E9335CA81C8FCCE100B4F3D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9335CA61C8FCCE100B4F3D3 /* Main.storyboard */; };
 		E9335CAD1C8FCCE100B4F3D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9335CAB1C8FCCE100B4F3D3 /* LaunchScreen.storyboard */; };
@@ -21,8 +20,6 @@
 		E952AD241F95BCCA00D8B3BF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E952AD221F95BCC900D8B3BF /* AppDelegate.m */; };
 		E952AD291F95BE3000D8B3BF /* image.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E952AD281F95BE3000D8B3BF /* image.xcassets */; };
 		E952AD2B1F95BEB800D8B3BF /* TestData.json in Resources */ = {isa = PBXBuildFile; fileRef = E952AD2A1F95BEB800D8B3BF /* TestData.json */; };
-		E9F54C061D5AF3BE00EBD9A7 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9F54C051D5AF3BE00EBD9A7 /* FirstViewController.m */; };
-		E9F54C091D5AF3D100EBD9A7 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9F54C081D5AF3D100EBD9A7 /* SecondViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,8 +43,6 @@
 		5EB9BED1797328E7ED5EBB74 /* Pods-ZSTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZSTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZSTest/Pods-ZSTest.release.xcconfig"; sourceTree = "<group>"; };
 		AED560C556EB529E632324A5 /* Pods-ZSTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZSTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZSTest/Pods-ZSTest.debug.xcconfig"; sourceTree = "<group>"; };
 		C4E9931D1D10B8C3930FBEC3 /* Pods_ZSTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZSTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E9229095205BB25F0034C487 /* MyView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyView.h; sourceTree = "<group>"; };
-		E9229096205BB2600034C487 /* MyView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyView.m; sourceTree = "<group>"; };
 		E9335C9A1C8FCCE100B4F3D3 /* ZSTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZSTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9335C9E1C8FCCE100B4F3D3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E9335CA71C8FCCE100B4F3D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -71,10 +66,6 @@
 		E952AD231F95BCC900D8B3BF /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E952AD281F95BE3000D8B3BF /* image.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = image.xcassets; sourceTree = "<group>"; };
 		E952AD2A1F95BEB800D8B3BF /* TestData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TestData.json; sourceTree = "<group>"; };
-		E9F54C041D5AF3BE00EBD9A7 /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		E9F54C051D5AF3BE00EBD9A7 /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		E9F54C071D5AF3D100EBD9A7 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		E9F54C081D5AF3D100EBD9A7 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -214,12 +205,6 @@
 				E9335CE01C8FCF0400B4F3D3 /* TestViewController.h */,
 				E9335CE11C8FCF0400B4F3D3 /* TestViewController.m */,
 				E9335CE21C8FCF0400B4F3D3 /* TestViewController.xib */,
-				E9F54C041D5AF3BE00EBD9A7 /* FirstViewController.h */,
-				E9F54C051D5AF3BE00EBD9A7 /* FirstViewController.m */,
-				E9F54C071D5AF3D100EBD9A7 /* SecondViewController.h */,
-				E9F54C081D5AF3D100EBD9A7 /* SecondViewController.m */,
-				E9229095205BB25F0034C487 /* MyView.h */,
-				E9229096205BB2600034C487 /* MyView.m */,
 			);
 			path = TestFiles;
 			sourceTree = "<group>";
@@ -455,11 +440,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E9F54C061D5AF3BE00EBD9A7 /* FirstViewController.m in Sources */,
 				E9335CDE1C8FCE9800B4F3D3 /* BaseViewController.m in Sources */,
-				E9F54C091D5AF3D100EBD9A7 /* SecondViewController.m in Sources */,
 				E9335C9F1C8FCCE100B4F3D3 /* main.m in Sources */,
-				E9229097205BB2600034C487 /* MyView.m in Sources */,
 				E9335CDD1C8FCE9800B4F3D3 /* BaseNavigationController.m in Sources */,
 				E9335CE31C8FCF0400B4F3D3 /* TestViewController.m in Sources */,
 				E952AD241F95BCCA00D8B3BF /* AppDelegate.m in Sources */,

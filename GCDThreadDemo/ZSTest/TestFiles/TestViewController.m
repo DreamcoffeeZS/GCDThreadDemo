@@ -7,9 +7,6 @@
 //
 
 #import "TestViewController.h"
-#import "FirstViewController.h"
-#import <objc/message.h>
-
 
 @interface TestViewController ()
 
