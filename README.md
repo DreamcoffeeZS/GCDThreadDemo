@@ -24,7 +24,7 @@
 
 
 ## 三、测试页面：
-![image](https://github.com/DreamcoffeeZS/GCDThreadDemo/blob/master/Screenshots/SimulatorScreenShot.png)
+<img src="https://github.com/DreamcoffeeZS/DTCoreTextDemo/blob/master/Screenshots/SimulatorScreenShot.png" width="375" height="667">
 
 ## 三、测试结果：
 ![image](https://github.com/DreamcoffeeZS/GCDThreadDemo/blob/master/Screenshots/description.png)
