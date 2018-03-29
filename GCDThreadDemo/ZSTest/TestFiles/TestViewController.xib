@@ -16,9 +16,141 @@
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <subviews>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dqd-5N-ywA">
+                    <rect key="frame" x="30" y="100" width="315" height="30"/>
+                    <color key="backgroundColor" red="0.90980392160000001" green="0.32156862749999998" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="Or7-ti-TWP"/>
+                    </constraints>
+                    <state key="normal" title="主线程队列(串行)：同步">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="onBtnClick:" destination="-1" eventType="touchUpInside" id="hWs-zB-B0y"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eYr-pn-fK2">
+                    <rect key="frame" x="30" y="150" width="315" height="30"/>
+                    <color key="backgroundColor" red="0.90980392160000001" green="0.32156862749999998" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="fa6-EM-iic"/>
+                    </constraints>
+                    <state key="normal" title="主线程队列(串行)：异步">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="onBtnClick:" destination="-1" eventType="touchUpInside" id="uJe-jF-ZVj"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fo3-cM-QHx">
+                    <rect key="frame" x="30" y="250" width="315" height="30"/>
+                    <color key="backgroundColor" red="0.90980392160000001" green="0.32156862749999998" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="VFW-OF-IPF"/>
+                    </constraints>
+                    <state key="normal" title="全局队列(并行)：异步">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="onBtnClick:" destination="-1" eventType="touchUpInside" id="4y6-At-a2x"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iMx-XB-RXb">
+                    <rect key="frame" x="30" y="320" width="315" height="30"/>
+                    <color key="backgroundColor" red="0.90980392160000001" green="0.32156862749999998" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="V0m-95-B2y"/>
+                    </constraints>
+                    <state key="normal" title="自定义串行队列：同步">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="onBtnClick:" destination="-1" eventType="touchUpInside" id="qyk-X2-n3v"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="43K-SD-LRu">
+                    <rect key="frame" x="30" y="370" width="315" height="30"/>
+                    <color key="backgroundColor" red="0.90980392160000001" green="0.32156862749999998" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="9Cy-ls-qyr"/>
+                    </constraints>
+                    <state key="normal" title="自定义串行队列：异步">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="onBtnClick:" destination="-1" eventType="touchUpInside" id="Fvv-hg-q5u"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nhj-nR-7S1">
+                    <rect key="frame" x="30" y="420" width="315" height="30"/>
+                    <color key="backgroundColor" red="0.90980392160000001" green="0.32156862749999998" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="6jn-UL-ar5"/>
+                    </constraints>
+                    <state key="normal" title="自定义并行队列：同步">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="onBtnClick:" destination="-1" eventType="touchUpInside" id="OXb-w5-Dd0"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dkr-D2-xlA">
+                    <rect key="frame" x="30" y="470" width="315" height="30"/>
+                    <color key="backgroundColor" red="0.90980392160000001" green="0.32156862749999998" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="eUw-kR-W47"/>
+                    </constraints>
+                    <state key="normal" title="自定义并行队列：异步">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="onBtnClick:" destination="-1" eventType="touchUpInside" id="DRZ-CM-HLm"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g40-eP-1P8">
+                    <rect key="frame" x="30" y="200" width="315" height="30"/>
+                    <color key="backgroundColor" red="0.90980392160000001" green="0.32156862749999998" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="rOf-CB-5t6"/>
+                    </constraints>
+                    <state key="normal" title="全局队列(并行)：同步">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="onBtnClick:" destination="-1" eventType="touchUpInside" id="bZd-9L-z1i"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.96470588235294119" green="0.96470588235294119" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="eYr-pn-fK2" firstAttribute="trailing" secondItem="dqd-5N-ywA" secondAttribute="trailing" id="1vX-Tj-Db2"/>
+                <constraint firstItem="fo3-cM-QHx" firstAttribute="top" secondItem="g40-eP-1P8" secondAttribute="bottom" constant="20" id="5RR-Yn-02J"/>
+                <constraint firstItem="iMx-XB-RXb" firstAttribute="leading" secondItem="dqd-5N-ywA" secondAttribute="leading" id="7gw-k2-GYS"/>
+                <constraint firstAttribute="trailing" secondItem="dqd-5N-ywA" secondAttribute="trailing" constant="30" id="93z-m5-jrr"/>
+                <constraint firstItem="iMx-XB-RXb" firstAttribute="top" secondItem="fo3-cM-QHx" secondAttribute="bottom" constant="40" id="9pH-b5-eVy"/>
+                <constraint firstItem="43K-SD-LRu" firstAttribute="leading" secondItem="dqd-5N-ywA" secondAttribute="leading" id="Bd9-wL-VaM"/>
+                <constraint firstItem="43K-SD-LRu" firstAttribute="trailing" secondItem="dqd-5N-ywA" secondAttribute="trailing" id="ByJ-7S-VQm"/>
+                <constraint firstItem="fo3-cM-QHx" firstAttribute="trailing" secondItem="dqd-5N-ywA" secondAttribute="trailing" id="FdR-ry-TxO"/>
+                <constraint firstItem="43K-SD-LRu" firstAttribute="top" secondItem="iMx-XB-RXb" secondAttribute="bottom" constant="20" id="IIV-5S-5Qq"/>
+                <constraint firstItem="Nhj-nR-7S1" firstAttribute="top" secondItem="43K-SD-LRu" secondAttribute="bottom" constant="20" id="IjM-1i-DGL"/>
+                <constraint firstItem="Dkr-D2-xlA" firstAttribute="leading" secondItem="dqd-5N-ywA" secondAttribute="leading" id="JQ1-Lq-cyk"/>
+                <constraint firstItem="g40-eP-1P8" firstAttribute="top" secondItem="eYr-pn-fK2" secondAttribute="bottom" constant="20" id="Jif-4Y-4iM"/>
+                <constraint firstItem="Dkr-D2-xlA" firstAttribute="top" secondItem="Nhj-nR-7S1" secondAttribute="bottom" constant="20" id="Pyz-0u-RoP"/>
+                <constraint firstItem="fo3-cM-QHx" firstAttribute="leading" secondItem="dqd-5N-ywA" secondAttribute="leading" id="TrG-Qi-cQC"/>
+                <constraint firstItem="dqd-5N-ywA" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="VnI-xC-yBJ"/>
+                <constraint firstItem="eYr-pn-fK2" firstAttribute="leading" secondItem="dqd-5N-ywA" secondAttribute="leading" id="Ztq-NJ-Vjo"/>
+                <constraint firstItem="dqd-5N-ywA" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="100" id="aug-yS-UKR"/>
+                <constraint firstItem="Dkr-D2-xlA" firstAttribute="trailing" secondItem="dqd-5N-ywA" secondAttribute="trailing" id="eQM-vi-FqX"/>
+                <constraint firstItem="Nhj-nR-7S1" firstAttribute="trailing" secondItem="dqd-5N-ywA" secondAttribute="trailing" id="ojw-FK-NVO"/>
+                <constraint firstItem="eYr-pn-fK2" firstAttribute="top" secondItem="dqd-5N-ywA" secondAttribute="bottom" constant="20" id="onB-Xt-E1l"/>
+                <constraint firstItem="iMx-XB-RXb" firstAttribute="trailing" secondItem="dqd-5N-ywA" secondAttribute="trailing" id="q89-cz-9g6"/>
+                <constraint firstItem="g40-eP-1P8" firstAttribute="leading" secondItem="dqd-5N-ywA" secondAttribute="leading" id="t9S-of-PyF"/>
+                <constraint firstItem="Nhj-nR-7S1" firstAttribute="leading" secondItem="dqd-5N-ywA" secondAttribute="leading" id="u2h-Qn-SUs"/>
+                <constraint firstItem="g40-eP-1P8" firstAttribute="trailing" secondItem="dqd-5N-ywA" secondAttribute="trailing" id="vgU-Gt-tOe"/>
+            </constraints>
             <point key="canvasLocation" x="246" y="325"/>
         </view>
     </objects>
