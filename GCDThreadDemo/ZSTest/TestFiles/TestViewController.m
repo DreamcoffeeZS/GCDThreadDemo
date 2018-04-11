@@ -118,12 +118,12 @@
 //8.自定义并行队列：异步
 //创建多个线程，多任务无序执行
 - (void)testGCDThread8{
-//    for (int i = 0; i < 10; i++) {
-//        dispatch_async(self.concurrentQueue, ^{
-//            NSLog(@"%@ %d", [NSThread currentThread], i);
-//        });
-//    }
-    [self testOperationQueue];
+    for (int i = 0; i < 10; i++) {
+        dispatch_async(self.concurrentQueue, ^{
+            NSLog(@"%@ %d", [NSThread currentThread], i);
+        });
+    }
+    //[self testOperationQueue];
 }
 
 
