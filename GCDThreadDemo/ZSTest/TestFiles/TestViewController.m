@@ -118,11 +118,12 @@
 //8.自定义并行队列：异步
 //创建多个线程，多任务无序执行
 - (void)testGCDThread8{
-    for (int i = 0; i < 10; i++) {
-        dispatch_async(self.concurrentQueue, ^{
-            NSLog(@"%@ %d", [NSThread currentThread], i);
-        });
-    }
+//    for (int i = 0; i < 10; i++) {
+//        dispatch_async(self.concurrentQueue, ^{
+//            NSLog(@"%@ %d", [NSThread currentThread], i);
+//        });
+//    }
+    [self testOperationQueue];
 }
 
 
@@ -130,25 +131,28 @@
 - (void)testOperationQueue{
     // 1.创建队列
     NSOperationQueue *queue = [[NSOperationQueue alloc] init];
+    queue.maxConcurrentOperationCount = 4;
+    
     // 2.创建操作
     // 使用 NSInvocationOperation 创建操作1
     NSInvocationOperation *op1 = [[NSInvocationOperation alloc] initWithTarget:self selector:@selector(task1) object:nil];
-
+    
     // 使用 NSInvocationOperation 创建操作2
     NSInvocationOperation *op2 = [[NSInvocationOperation alloc] initWithTarget:self selector:@selector(task2) object:nil];
-
-    // 使用 NSBlockOperation 创建操作3
-    NSBlockOperation *op3 = [NSBlockOperation blockOperationWithBlock:^{
-        for (int i = 0; i < 10; i++) {
-            [NSThread sleepForTimeInterval:2]; // 模拟耗时操作
-            NSLog(@"3---%@", [NSThread currentThread]); // 打印当前线程
-        }
-    }];
     
+
+    // 使用 NSInvocationOperation 创建操作3
+    NSInvocationOperation *op3 = [[NSInvocationOperation alloc] initWithTarget:self selector:@selector(task3) object:nil];
+    
+    // 使用 NSInvocationOperation 创建操作4
+    NSInvocationOperation *op4 = [[NSInvocationOperation alloc] initWithTarget:self selector:@selector(task4) object:nil];
+
     // 3.使用 addOperation: 添加所有操作到队列中
-    [queue addOperation:op1]; // [op1 start]
-    [queue addOperation:op2]; // [op2 start]
-    [queue addOperation:op3]; // [op3 start]
+    [queue addOperation:op1];
+    [queue addOperation:op2];
+    [queue addOperation:op3];
+    [queue addOperation:op4];
+
 }
 
 - (void)task1{
@@ -157,6 +161,14 @@
 
 - (void)task2{
     NSLog(@"2---%@", [NSThread currentThread]); // 打印当前线程
+}
+
+- (void)task3{
+    NSLog(@"3---%@", [NSThread currentThread]); // 打印当前线程
+}
+
+- (void)task4{
+    NSLog(@"4---%@", [NSThread currentThread]); // 打印当前线程
 }
 
 
